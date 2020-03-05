@@ -148,7 +148,8 @@ defmodule IslandsEngine.Game do
 
   defp fresh_state(name) do
     player1 = %{name: name, board: Board.new(), guesses: Guesses.new()}
-    player2 = %{name: nil, board: Board.new(), guesses: Guesses.new()}      %{player1: player1, player2: player2, rules %Rules{}}
+    player2 = %{name: nil, board: Board.new(), guesses: Guesses.new()}
+    %{player1: player1, player2: player2, rules: %Rules{}}
   end
   
   # def handle_info(:first, state) do
